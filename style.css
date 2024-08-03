@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --primaryColor:#5026A7;
+    --secondeColor:#95E8D7;
+    --white:#ffff;
+    --black:#746c6c;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: var(--white);
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: var(--primaryColor);
+}
+h4{
+    font-size: 20px;
+    
+    color: var(--black);
+}
+p{
+    color: var(--white);
+}
+ body{
+    width: 100%;
+ }
+ a{
+    text-decoration: none;
+    color: var(--white);
+ }
+/*Header*/
+header{
+    
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: var(--primaryColor);
+    box-shadow: 0 5px 15px rgb(0, 0, 0,0.06);
+}
+#logo{
+    font-family: "Playwrite CU", cursive;
+    font-size: 25px;
+    font-weight:800;
+}
+#logo span{
+    font-family: "Playwrite CU", cursive;
+    color: rgb(214, 162, 18);
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+nav ul  li{
+    list-style: none;
+    margin-right: 15px;
+    position: relative;
+} 
+ul li a {
+    color: var(--white);
+    font-size: 18px;
+    transition:  0.5s ease;
+}
+ul li a:hover,.active{
+    color:  rgb(214, 162, 18);
+}
+ul li a.active::after,ul li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(214, 162, 18);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+/* main*/
+#hero{
+    background-image: url("./images/vue-macro-du-mecanisme-horloge_155003-8195.jpg");
+    height: 100vh;
+   
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    padding: 0 150px;
+
+}
+#hero h2{
+    color: rgb(214, 162, 18);
+}
+#hero button{
+    width: 200px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: var(--primaryColor);
+    color: var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+    margin:15px 50px;
+}
+
+#hero h4{
+    padding-bottom:15px ;
+}
+#hero h1{
+    color: var(--white);
+}
+#category{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     padding-top: 20px;
+     
+    height: 60vh;
+
+}
+#category h2{
+    clip-path: polygon(100% 0%, 88% 48%, 100% 100%, 0 100%, 14% 48%, 0 0);
+    width: 600px;
+    padding: 20px;
+    text-align: center;
+    background-color:var(--primaryColor);
+    color: var(--white);
+}
+.cat{
+    width: 900px;
+    max-width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.cat div{
+    width: 45%;
+    height: 300px;
+    border: 1px solid var(--primaryColor);
+    box-shadow: 0 5px 15px rgb(0, 0, 0,0.06);
+    background-size: cover;
+    background-position: top 70% right 0;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin:20px 10px;
+    background-image: url("./images/homme-affaires-verifiant-heure_1357-97.jpg");
+}
+.cat div h4{
+    color: var(--primaryColor);
+    background-color: rgba(255, 255, 255, 0.226);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.cat div:last-child{
+    background-position: top 50% right 0;
+    background-image: url(./images/femme-montrant-son-nail-art-ongles-montre_23-2149820445.jpg);
+}
+#features .featuresbody img{
+    
+    border-radius: 10%;
+    width: 90%;
+    filter: drop-shadow(0 50px 20px #0009);
+    height: 200px;
+
+}
+#features{
+    display: flex;
+    align-items: center;
+   
+    justify-content: space-evenly;
+  
+    flex-direction: column;
+    
+}
+/*#features h2::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background:var(--primaryColor);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    color: var(--primaryColor);
+}*/
+.featurescenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 80%;
+}
+#features .featuresbody {
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+
+}
+#features .featuresbody div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #eeeee6;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+
+#features .featuresbody div button{
+    width: 200px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: var(--primaryColor);
+    color: var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+    margin:15px 50px;
+}
+#features .featuresbody div p{
+    color: rgb(214, 162, 18);
+}
